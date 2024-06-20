@@ -1,0 +1,122 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light mode background color */
+    color: #333; /* Light mode text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+    background-color: #333; /* Dark mode background color */
+    color: #f0f0f0; /* Dark mode text color */
+}
+
+.container {
+    background-color: white; /* Light mode container background color */
+    color: #333; /* Light mode container text color */
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .container {
+    background-color: #333; /* Dark mode container background color */
+    color: #f0f0f0; /* Dark mode container text color */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9; /* Light mode task item background color */
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode li {
+    background-color: #444; /* Dark mode task item background color */
+    color: #f0f0f0; /* Dark mode task item text color */
+}
+
+li .buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.buttons button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.buttons button:hover {
+    background-color: #e68a00;
+}
+
+.delete-btn {
+    background-color: #e53935;
+}
+
+.delete-btn:hover {
+    background-color: #c62828;
+}
+
+.complete-btn {
+    background-color: #43a047;
+}
+
+.complete-btn:hover {
+    background-color: #388e3c;
+}
+
+.edit-btn {
+    background-color: #2196f3;
+}
+
+.edit-btn:hover {
+    background-color: #1e87dc;
+}
+
+.checkmark {
+    display: inline-block;
+    margin-left: 10px;
+    color: #43a047;
+}
+
+#darkModeToggle {
+    margin-top: 20px;
+    background-color: #607d8b;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#darkModeToggle:hover {
+    background-color: #455a64;
+}
